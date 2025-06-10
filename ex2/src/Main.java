@@ -16,6 +16,8 @@ public class Main {
 
         float delta = (coefB*coefB) - 4*coefA*coefC;
 
+        if(delta < 0) throw new RuntimeException("Equação improcessável!");
+
         double x1;
         double x2;
 
